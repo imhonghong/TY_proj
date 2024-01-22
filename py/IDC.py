@@ -8,3 +8,5 @@ img_in=f.readlines()
 f.close
 
 print(img_in)
+
+def read_img(file_path):
