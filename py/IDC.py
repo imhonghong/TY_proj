@@ -9,6 +9,5 @@ def read_img(file_path):
 	#input : str
 	#output: 1D list
 
-
 img_in=read_img(r'py/img1.txt')
 print(img_in)
