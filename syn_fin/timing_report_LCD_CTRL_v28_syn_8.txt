@@ -1,0 +1,87 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LCD_CTRL
+Version: P-2019.03
+Date   : Thu Apr 18 22:29:34 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: opX_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: img_reg_55__1_
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  opX_reg_0_/CK (DFFHQX8)                                 0.00       0.00 r
+  opX_reg_0_/Q (DFFHQX8)                                  0.25       0.25 f
+  U4008/Y (INVX20)                                        0.08       0.34 r
+  U6346/Y (XOR2X4)                                        0.13       0.47 f
+  U6323/Y (BUFX20)                                        0.14       0.60 f
+  U5694/Y (AND2X8)                                        0.15       0.75 f
+  U5932/Y (BUFX20)                                        0.12       0.87 f
+  U5918/Y (BUFX20)                                        0.11       0.98 f
+  U6127/Y (OAI2BB2X4)                                     0.14       1.12 f
+  U5780/Y (OA21X4)                                        0.22       1.34 f
+  U5878/Y (OR3X6)                                         0.22       1.57 f
+  U6039/Y (OR3X8)                                         0.21       1.78 f
+  U5950/Y (NAND2X8)                                       0.08       1.85 r
+  U6040/Y (NAND4X8)                                       0.14       1.99 f
+  add_2_root_add_0_root_add_148_3/B[0] (LCD_CTRL_DW01_add_8)
+                                                          0.00       1.99 f
+  add_2_root_add_0_root_add_148_3/U115/Y (NAND2X8)        0.10       2.10 r
+  add_2_root_add_0_root_add_148_3/U83/Y (BUFX12)          0.11       2.21 r
+  add_2_root_add_0_root_add_148_3/U120/Y (XOR2X4)         0.22       2.43 r
+  add_2_root_add_0_root_add_148_3/SUM[1] (LCD_CTRL_DW01_add_8)
+                                                          0.00       2.43 r
+  add_1_root_add_0_root_add_148_3/A[1] (LCD_CTRL_DW01_add_9)
+                                                          0.00       2.43 r
+  add_1_root_add_0_root_add_148_3/U109/Y (NOR2X8)         0.13       2.56 f
+  add_1_root_add_0_root_add_148_3/U108/Y (OA21X4)         0.26       2.82 f
+  add_1_root_add_0_root_add_148_3/U130/Y (OAI21X4)        0.14       2.96 r
+  add_1_root_add_0_root_add_148_3/U46/Y (XNOR2X4)         0.17       3.13 f
+  add_1_root_add_0_root_add_148_3/SUM[3] (LCD_CTRL_DW01_add_9)
+                                                          0.00       3.13 f
+  add_0_root_add_0_root_add_148_3/B[3] (LCD_CTRL_DW01_add_7)
+                                                          0.00       3.13 f
+  add_0_root_add_0_root_add_148_3/U118/Y (OR2X8)          0.19       3.32 f
+  add_0_root_add_0_root_add_148_3/U108/Y (NAND2X4)        0.08       3.40 r
+  add_0_root_add_0_root_add_148_3/U111/Y (XOR2X4)         0.17       3.57 f
+  add_0_root_add_0_root_add_148_3/SUM[3] (LCD_CTRL_DW01_add_7)
+                                                          0.00       3.57 f
+  U7347/Y (CLKAND2X12)                                    0.16       3.73 f
+  U6471/Y (CLKINVX16)                                     0.07       3.80 r
+  U4626/Y (INVX8)                                         0.13       3.93 f
+  U4444/Y (AOI221X4)                                      0.41       4.34 r
+  U6420/Y (OAI221X2)                                      0.12       4.46 f
+  U9628/Y (AO21X2)                                        0.32       4.78 f
+  img_reg_55__1_/D (DFFNSRX1)                             0.00       4.78 f
+  data arrival time                                                  4.78
+
+  clock clk (fall edge)                                   5.02       5.02
+  clock network delay (ideal)                             0.00       5.02
+  img_reg_55__1_/CKN (DFFNSRX1)                           0.00       5.02 f
+  library setup time                                     -0.24       4.78
+  data required time                                                 4.78
+  --------------------------------------------------------------------------
+  data required time                                                 4.78
+  data arrival time                                                 -4.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

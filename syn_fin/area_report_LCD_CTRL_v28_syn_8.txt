@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: P-2019.03
+Date   : Thu Apr 18 22:29:34 2024
+****************************************
+
+Library(s) Used:
+
+    slow (File: /mnt3/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                          154
+Number of nets:                          8291
+Number of cells:                         7737
+Number of combinational cells:           6631
+Number of sequential cells:               554
+Number of macros/black boxes:               0
+Number of buf/inv:                       1381
+Number of references:                     217
+
+Combinational area:              76087.651537
+Buf/Inv area:                    11445.568181
+Noncombinational area:           21443.253967
+Macro/Black Box area:                0.000000
+Net Interconnect area:         1041651.881042
+
+Total cell area:                 97530.905504
+Total area:                    1139182.786547
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------
+LCD_CTRL                          97530.9055    100.0  72633.4426  21443.2540  0.0000  LCD_CTRL
+a1                                  108.6336      0.1    108.6336      0.0000  0.0000  add1_7
+a2                                   32.2506      0.0     32.2506      0.0000  0.0000  add1_3_0
+a3                                   33.9480      0.0     33.9480      0.0000  0.0000  add1_3_1
+a4                                   32.2506      0.0     32.2506      0.0000  0.0000  sub1_3_0
+a5                                   32.2506      0.0     32.2506      0.0000  0.0000  sub1_3_1
+add_0_root_add_0_root_add_148_3     977.7024      1.0    977.7024      0.0000  0.0000  LCD_CTRL_DW01_add_7
+add_1_root_add_0_root_add_148_3    1145.7450      1.2   1145.7450      0.0000  0.0000  LCD_CTRL_DW01_add_9
+add_2_root_add_0_root_add_148_3    1091.4282      1.1   1091.4282      0.0000  0.0000  LCD_CTRL_DW01_add_8
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------
+Total                                                  76087.6515  21443.2540  0.0000
+
+1
