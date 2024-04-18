@@ -1,0 +1,1 @@
+$ncverilog testfixture.v lcd_ctrl_v29.v +define+tb1+FSDB+access+r
