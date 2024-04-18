@@ -63,8 +63,8 @@ assign enterws=(~|cmd)&cmd_valid;
 always@(*)begin
 	case(cs)
 	INIT:	begin	ns<=(ini_done)?WORK:INIT;
-					busy<=~ini_done;
-					IROM_EN<=ini_done;
+					busy<=1;
+					IROM_EN<=0;
 					IRB_RW<=1'b1;
 					done<=1'b0;
 			end
